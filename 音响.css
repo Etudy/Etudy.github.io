@@ -1,0 +1,36 @@
+div.introduction {
+    border-style: groove;
+    background: url("https://wrpes1.files.wordpress.com/2021/09/img-20210908-wa0012.jpg");
+    border-color: rgba(0, 0, 0, 0.479);
+    padding: 1%;
+    margin-top: 2%;
+}
+
+h1.introduction {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Lucida Handwriting, Cursive;
+
+}
+
+p.introduction {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.h3 {
+    border-style: dashed;
+    margin-left: 30%;
+    margin-right:30% ;
+    margin-bottom: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+h3.h3 {
+    text-align: center;
+}
+
