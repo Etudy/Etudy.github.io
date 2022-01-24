@@ -30,7 +30,7 @@ li.study {
   text-align: center;
   list-style-type: none;
   color: black;
-  background-color: rgb(230, 134, 222);
+  background: url("https://wrpes1.files.wordpress.com/2021/09/img-20210908-wa0012.jpg");
   border: black;
   margin-left: 35%;
   margin-right: 35%;
@@ -43,3 +43,10 @@ a.study {
   color: rgb(0, 0, 0);
 }
 
+li a:hover:not(.active).study {
+  background-color: rgb(99, 212, 207);
+}
+
+div.content {
+  margin: auto;
+}
