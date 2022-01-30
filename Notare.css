@@ -20,10 +20,10 @@ li.class {
 }
 
 li a:hover:not(.active).class {
-    background-color: rgb(238, 66, 66);
+    background-color: rgb(87, 154, 231);
 }
 
-li a.class {
+li a.clas {
     background-color: #95ffed;
     color: rgb(0, 0, 0);
 }
