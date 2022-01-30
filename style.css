@@ -26,6 +26,7 @@ div.li {
     position: fixed;
     top: 0;
     width: 100%;
+    
   }
   
   li.left {
@@ -42,6 +43,10 @@ div.li {
   
   li a:hover:not(.active) {
     background-color: rgb(117, 76, 231);
+  }
+
+  li a:hover:not(.active).about {
+    background-color: rgb(233, 59, 59);
   }
   
   .active {
