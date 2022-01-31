@@ -27,7 +27,6 @@ div.li {
     top: 0;
     width: 100%;
     float: none;
-    overflow: scroll;
   }
   
   li.left {
