@@ -1,6 +1,6 @@
 body {
     background: url("https://wrpes1.files.wordpress.com/2021/09/img_20210908_191712.jpg");
-    margin:0 ;
+    margin: 0;
 }
 
 img.img {
@@ -14,19 +14,17 @@ div.li {
       text-align: center;
   }
     
-
-
-
   ul.ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: auto;
     background-color: rgb(46, 45, 45);
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     float: none;
+    overflow: auto;
+    display: non;
   }
   
   li.left {
@@ -41,7 +39,7 @@ div.li {
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
+  li.left a:hover:not(.active) {
     background-color: rgb(117, 76, 231);
   }
 
@@ -56,3 +54,8 @@ div.li {
   li.about {
     float: right;
   }
+
+  @media screen and (max-width: 520px) {
+    .about {
+      display: none; 
+    }
