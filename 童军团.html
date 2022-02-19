@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <SCRIPT language=JavaScript> 
+ 
+        function password() { 
+         
+        var testV = 1; 
+         
+        var pass1 = prompt('请输入密码:',''); 
+         
+        while (testV < 3) { 
+         
+        if (!pass1) 
+         
+        history.go(-1); 
+         
+        if (pass1 == "34kk") { 
+         
+        alert('密码正确!'); 
+         
+        break; 
+         
+        } 
+         
+        testV+=-1; 
+         
+        var pass1 = prompt('密码错误!请重新输入:'); 
+         
+        } 
+         
+        if (pass1!="password" & testV ==3) 
+         
+        history.go(-1); 
+         
+        return " "; 
+         
+        } 
+         
+        document.write(password()); 
+         
+        </SCRIPT>
     <title>童军</title>
-    <script src="js/童军pws.js"></script>
+    
     <link rel="stylesheet" href="css/童军.css">
 </head>
 <body>
+
     <h2 class="other">童军</h2>
     <li class="study"><a href="童军网课记录.html" class="">童军网课记录</a></li>
 </body>
