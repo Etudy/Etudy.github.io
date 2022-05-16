@@ -26,6 +26,8 @@ li a.clas {
 
 div.tex {
     text-align: center;
+    font-family: Lucida Handwriting, Cursive ;
+    font-size: 25px;
 }
 
 h1.introduction {
@@ -40,27 +42,26 @@ p.introduction {
 }
 
 li.content {
-    background-color: rgb(247, 146, 216);
+    background :url('https://wrpes1.files.wordpress.com/2021/09/img-20210908-wa0012.jpg');
     list-style-type: none;
     margin: 0 auto;
     margin-left: 40%;
     margin-right: 40%;
     margin-top: 3%;
     margin-bottom: 3%;
-    border-radius: 100px;
+    border-radius: 25px;
 }
 
 a.content {
     color: rgb(0, 0, 0);
 }
 
-li.content:hover:not(.c) {
-    background-color: rgb(253, 139, 248);
+a.content:hover:not(.c) {
+    background-color: rgb(245, 164, 188);
 }
 
 a.dropdown:hover:not(.c) {
-    background-color: rgb(240, 143, 233);
-    
+    background-color: rgb(237 190 204);
 }
 
 div.dropdown-content {
@@ -70,7 +71,7 @@ div.dropdown-content {
 
 li.content:hover .dropdown-content {
     display: block;
-    background-color: rgb(253, 139, 248);
+    background :url('https://wrpes1.files.wordpress.com/2021/09/img-20210908-wa0012.jpg')
 
 }
 

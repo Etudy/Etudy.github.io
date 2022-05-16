@@ -7,15 +7,15 @@ div.introduction {
 h1.introduction {
     text-align: center;
     color: rgb(0, 0, 0);
-    font-family: Lucida Handwriting, Cursive;
+    font-family: Lucida Handwriting, Cursive ;
     
   }
   p.introduction {
     text-align: center;
-      }
-
-
-
+    font-family: Lucida Handwriting, Cursive ;
+    font-size: 25px;
+    }
+   
 div.li {
     list-style: none;
     text-align: center;
