@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 的讲解</title>
+    <style>
+        body {
+            background: url("https://wrpes1.files.wordpress.com/2021/09/img_20210908_191712.jpg");
+            overflow: hidden;
+        }
+
+        canvas {
+            transition: all .2s;
+        }
+
+        h2 {
+            text-align: center;
+            background: linear-gradient(90deg, #72ace9, #5558b6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        h1 {
+            text-align: center;
+            background: linear-gradient(90deg, #72ace9, #5558b6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-top: 10px;
+            margin-bottom:10px ;
+        }
+
+        div {
+            border-style: solid;
+            margin: auto;
+            width: 50%;
+            margin-top: 10px;
+            overflow: auto;
+            resize: both;
+            padding: 10px;
+            color: rgb(57, 82, 243);
+        }
+
+        a {
+            position: absolute;
+            width: 200px;
+            height: 60px;
+            Line-height: 60px;
+            text-align: center;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: rgb(120, 85, 247);
+            text-decoration: none;
+            margin-top: 25px;
+            margin-left: 44%;
+        }
+
+        a svg,
+        a svg rect {
+            position: absolute;
+            top: 8;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            fill: transparent;
+            margin: auto;
+        }
+
+        a svg rect {
+            stroke: #00e2ff;
+            stroke-width: 4;
+            transition: 2s;
+            stroke-dasharray: 68 208;
+            stroke-dashoffset: 300;
+            margin: auto;
+        }
+
+        a:hover svg rect {
+            stroke: #ff0;
+            stroke-dasharray: 209 60;
+            stroke-dashoffset: 0;
+            margin: auto;
+        }
+
+        div {
+            background-color: #ffffff;
+            border: 5px solid;
+            border-image: linear-gradient(#ff512f,
+                    #dd2476,
+                    #1c64fF)1;
+            animation: rotate 2.5s ease-in infinite;
+        }
+
+        @keyframes rotate {
+            50% {
+                border-image:
+                    linear-gradient(360deg,
+                        #ff512f,
+                        #dd2476,
+                        #1c64ff)1;
+            }
+        }
+
+        * {
+	margin: 0;
+	padding: 0;
+}
+    </style>
+
+    
+</head>
+
+<body>
+    <h1>电脑成果展 高二文理班</h1>
+    <h2>什么是Web？</h2>
+    <div class="a">web是互联网的总称，全称为World Wide Web，缩写WWW
+        ，即全球广域网，也称为万维网，它是一种基于超文本和HTTP的、全球性的、动态交互的、跨平台的分布式图形信息系统。简单地说，Web是一种体系结构，通过它可以访问遍布于因特网（Internet）主机上的链接文档。</div>
+
+    <h2>Web 有什么特点</h2>
+    <div class="b">
+        <p>（ 1 ）一体性</p>
+
+        <p>Web 非常流行的一个很重要的原因就在于它可以在一页上同时显示色彩丰富的图形和文本的性能。在 Web 之前 Internet 上的信息只有文本形式。 Web 可以提供将图形、音频、视频信息集合于一体的特性。</p>
+
+        <p>（ 2 ）独立性</p>
+
+        <p>无论用户的系统平台是什么，你都可以通过 Internet 访问 WWW ，浏览 WWW 对系统平台没有什么限制。</p>
+
+        <p>（ 3 ）交互性</p>
+
+        <p>Web 的交互性首先表现在它的超链接上，用户的浏览顺序和所到站点完全由他自己决定。另外通过 FORM 的形式可以从服务器方获得动态的信息。用户通过填写 FORM
+            可以向服务器提交请求，服务器可以根据用户的请求返回相应信息。</p>
+
+    </div>
+    <h2>WEB一些基本术语</h2>
+    <div class="c">
+        
+        <p>Internet：前身是阿帕奇网，把多台电脑终端连接在一起</p>
+        <p>现在成为广域网（Internet）:互联网</p>
+        <p>WWW（万维网）提供一定的网页浏览服务：网上购物，网络共享，为我们提供网页浏览服务</p>
+        <p>URL（统一资源定位符）：就是俗称的网址：如https://www.youtube.com/</p>
+        <p>DNS（域名解析）：每一个主机都有一个世界上唯一的IP</p>
+        <p>IP 地址和我们的网页是一一对应的。如：202.188.0.133是TMNet的IP地址</p>
+        <p>https://www.youtube.com/ DNS就是把我们的域名解析成为IP地址的过程</p>
+        <p>HTTP（超文本传输协议）：做了一些通讯的规则。</p>
+        <p>想把网站连到互联网上就要遵循互联网上的协议（HTTP）</p>
+        <p> W3C（万维网联盟）：一个组织，制作WEB语法规范</p>
+        </div>
+
+    <a href="https://forms.gle/qarjshNaVj8idxmS6" target="_blank"><svg>
+            <rect></rect>
+        </svg>和我们互动吧</a>
+        
+        
+
+</body>
+
+</html>
