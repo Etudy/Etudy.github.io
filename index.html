@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,inital-scale=1.0,minimum-scale=0.5,maximum-scale=2.0,user-scalable=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0.5,maximum-scale=2.0,user-scalable=no">
   <title>étudy</title>
   <link rel="stylesheet" href="css\index.css">
   <link rel="stylesheet" href="css\style.css">
@@ -13,46 +14,53 @@
   <!--网页标题左侧显示-->
   <link rel="icon" href="pictures/icon.png" type="image/png">
 
-  <style></style>
-  <script language="javascrip"> //JavaScript脚本标注
-  var con;
-con=confirm('若电脑版请按确定,手机版请按取消'); //在页面上弹出对话框
-if(con==false) window.location.href='手机版主页.html'
-</script>
+<script src="js/index.js"></script>
+<script src="js/right-click.js"></script>
 
 </head>
 
-
-
 <body>
+
+  <nav id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="Notare.html">Notare</a>
+    <a href="404.html">Laborare</a>
+    <a href="404.html">Solvere</a>
+    <a href="其他.html" class="about">Other</a>
+  </nav>
+
+  <header>étudy</header>
+  
   <ul class="ul">
     <a href="#admin.html">
       <img src="pictures/icon.png" alt="" class=img></a>
     <li class="left"><a class="active" href="index.html">Home</a></li>
-    <li class="left"><a href="Notare.html">Notare</a></li>
-    <li class="left"><a href="404.html">Laborare</a></li>
-    <li class="solvere"><a href="404.html">Solvere</a></li>
-
-    <li class="about"><a href="其他.html" class="about">Other</a></li>
-
-
+    
+    <button id="openbtn" class="openbtn" onclick="openNav()">&#9776;</button>
   </ul>
+  
+  <div class="content-bg">
+
   <div class=introduction>
 
-    <h1 class=introduction>Introduction</h1>
-    <p class=introduction>任何一个人，都要必须养成自学的习惯，即使是今天在学校的学生，也要养成自学的习惯，因为迟早总要离开学校的!<br>自学，就是一种独立学习，独立思考的能力。行路，还是要靠行路人自己。——华罗庚</p>
-  </div>
-
-  <div class="content"> 
-    <li class="study"><a href="Notare.html" class="study">Notare</a></li>
-    <li class="study"><a href="404.html" class="study">Laborare</a></li>
-    <li class="study"><a href="404.html" class="study">Solvere</a></li>
+    <p class=introduction>任何一个人，都要必须养成自学的习惯，<br>即使是今天在学校的学生，也要养成自学的习惯，因为迟早总要离开学校的!<br>自学，就是一种独立学习，独立思考的能力。行路，还是要靠行路人自己。——华罗庚</p>
     
   </div>
 
-  <div>
-
+  <div class="content">
+    <a href="Notare.html" class="study">Notare</a>
+    <a href="404.html" class="study">Laborare</a>
+    <a href="404.html" class="study">Solvere</a>
   </div>
+
+</div>
+
+<footer> <small >&copy; Copyright <span id="copyright"></span>  étudy. All Rights Reserved.</small> </footer> 
+
+<script>
+var d = new Date();
+document.getElementById("copyright").innerHTML = d.getFullYear() </script>
 
 </body>
 

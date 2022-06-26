@@ -10,32 +10,44 @@
     <link rel="stylesheet" href="css/Notare.css">
     <meta name="viewport" content="width=device-width， initial-scale=1" />
     <link rel="icon" href="pictures/icon.png" type="image/png">
+    <script src="js/index.js"></script>
+    <script src="js/Notare.js"></script>
 </head>
     
 <body>
 
-    <ul class="ul">
-        <img src="pictures/icon.png" alt="" class=img>
-        <li class="left"><a href="index.html">Home</a></li>
-        <li class="left"><a class="active" href="Notare.html">Notare</a></li>
-        <li class="left"><a href="404.html">Laborare</a></li>
-        <li class="solvere"><a href="404.html">Solvere</a></li>
+    <nav id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="Notare.html">Notare</a>
+        <a href="404.html">Laborare</a>
+        <a href="404.html">Solvere</a>
+        <a href="其他.html" class="about">Other</a>
+      </nav>
+      
+      <ul class="ul">
+        <a href="#admin.html">
+          <img src="pictures/icon.png" alt="" class=img></a>
+        <li class="left"><a class="" href="index.html">Home</a></li>
+        <li class="left" ><a class="active" href="javascript:void(0)" onclick="openNotare()" id="a">Notare&#8593</a></li>
+        <button id="openbtn" class="openbtn" onclick="openNav()">&#9776;</button>
+      </ul>
+    
+    
+    <div class="tex">
+        <p class='introduction main'>Introduction<p>
+        <p class=introduction>
+            本网站的资料由善心人士提供，用作学习用途，<br>严禁将他人制作的笔记作为商业用途。
+        </p>
+    </div>
 
-        <li class="about"><a href="其他.html" class="about">Other</a></li>
-       
-        </ul>
-
-
-
-    <div class="content">
-        <div class="class">
+        <div class="class" id="class">
             <li class="class"><a href="Notare.html" class="clas">简介 <br>Introduction </a></li>
             <li class="class"><a href="Adv.Math.html" class="class">高级数学 <br>Adv.Math </a></li>
             <li class="class"><a href="404.html" class="class">化学<br>Chemistry </a></li>
             <li class="class"><a href="Physi .html" class="class">物理 <br>Physi </a></li>
             <li class="class"><a href="404.html" class="class">生物 <br>Biology </a></li>
             <li class="class"><a href="404.html" class="class">电脑与资讯工艺<br>Computer and <br> Technology </a></li>
-
             <li class="class"><a href="404.html" class="class">华文 <br>Chinese </a></li>
             <li class="class"><a href="404.html" class="class">英文 <br>English </a></li>
             <li class="class"><a href="404.html" class="class">马来文 <br>Malay </a></li>
@@ -43,16 +55,16 @@
             <li class="class"><a href="404.html" class="class">地理 <br> </a></li>
             <li class="class"><a href="404.html" class="class">商业学 <br> </a></li>
             <li class="class"><a href="404.html" class="class">簿记 <br> </a></li>
+            <li class="none"></li>
         </div>
+    <div class="content"></div>
 
+    <footer> <small >&copy; Copyright <span id="copyright"></span>  étudy. All Rights Reserved.</small> </footer> 
 
-        <div class="tex">
-            <h1 class=introduction>Introduction</h1>
-            <p class=introduction>
-                本网站的资料由善心人士提供，用作学习用途，<br>严禁将他人制作的笔记作为商业用途。
-            </p>
-        </div>
-    </div>
+    <script>
+    var d = new Date();
+    document.getElementById("copyright").innerHTML = d.getFullYear() </script>
+    
 </body>
 
 </html>
