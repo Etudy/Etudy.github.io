@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   background: url("https://wrpes1.files.wordpress.com/2021/09/img_20210908_191712.jpg");
   margin: 0;
@@ -7,6 +11,72 @@ img.img {
   width: 50px;
   height: 50px;
   float: left;
+  padding-left: 5px;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  margin-top: 50px;
+  top: 0;
+  right: 0;
+  background-color: rgb(50, 50, 50); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+  background: rgb(25, 25, 25);
+  font-size: 30px;
+  border: 10px solid rgb(50, 50, 50);
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  right: 10%;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(50, 50, 50);;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: right; 
+  margin-right: 2%;
+}
+
+.openbtn:hover {
+  background-color: #444;
+  border-radius: 100px;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 1px) {
+  .sidepanel .closebtn {
+    display: none;
+  }
 }
 
 div.li {
@@ -18,7 +88,7 @@ ul.ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: rgb(46, 45, 45);
+  background-color: rgb(50, 50, 50);
   position: sticky;
   top: 0;
   width: 100%;
@@ -31,11 +101,7 @@ li.left {
   float: left;
 }
 
-li.solvere {
-  float: left;
-}
-
-li a {
+li.left a {
   display: block;
   color: white;
   text-align: center;
@@ -44,33 +110,63 @@ li a {
 }
 
 li.left a:hover:not(.active) {
-  background-color: rgb(117, 76, 231);
+  background-color: rgb(100, 100, 100);
 }
 
-li.solvere a:hover:not(.active) {
-  background-color: rgb(117, 76, 231);
+header {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  position: fixed;
+  margin-left: 46%;
+  font-family: Lucida Handwriting, Cursive ;
+  z-index: 1;
+  background:linear-gradient(90deg,#72ace9,#5558b6);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
 }
 
-li a:hover:not(.active).about {
-  background-color: rgb(233, 59, 59);
+header:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4,
+  0 0 50px #03e9f4,
+  0 0 100px #03e9f4;
 }
 
 .active {
   background-color: #04AA6D;
 }
 
-li.about {
-  float: right;
+div.content {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 7%;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 515px) {
-  .about {
-    display: none;
-  }
+a {
+  text-decoration: none
 }
 
-@media screen and (max-width: 405px) {
-   .solvere{
-    display: none;
-  }
+footer {
+  text-align: center;
+  background: rgb(209, 209, 209);
+  padding: 1% 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.content-bg {
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+::selection {
+  background: rgb(90, 88, 230);
+  color: rgb(255, 255, 255);
 }

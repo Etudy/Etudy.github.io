@@ -1,27 +1,59 @@
 div.class {
-    float: left;
-    padding: 0;
-    margin: 0;
-    overflow: auto;
-    background-color: rgb(124, 122, 122);
-    height: 90vh;
-    resize: both;
-    position: fixed;
+    height: 0; 
+    width: 225px; 
+    position: fixed; 
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    background-color: rgb(50, 50, 50); 
+    overflow-x: hidden;  
+    transition: 1s;
+}
+
+@media screen and (min-width: 600px) {
+    div.class {
+        height: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    width:10px;
+}
+::-webkit-scrollbar-track {
+    background:rgb(50, 50, 50);
+    border-radius:50px;
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(50, 50, 50);
+    border-radius:50px;
+    transition:  0.5s;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background:rgb(75, 75, 75);
 }
 
 li.class {
     list-style-type: none;
-    border-style: none;
-    color: rgb(218, 218, 218);
+}
+
+li a {
+    display: block;
+    color: #a6a6a6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 li.class a:hover:not(.clas) {
-    background-color: rgb(87, 154, 231);
+    background: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
 }
 
 li a.clas {
-    background-color: #5dfae0;
-    color: rgb(0, 0, 0);
+    background-color: #3ce19e;
+    color: rgb(255, 255, 255);
 }
 
 div.tex {
@@ -30,11 +62,11 @@ div.tex {
     font-size: 25px;
 }
 
-h1.introduction {
-    text-align: center;
+p.main {
     color: rgb(0, 0, 0);
     font-family: Lucida Handwriting, Cursive;
     margin: 0;
+    font-size: 40px;
 }
 
 p.introduction {
@@ -78,3 +110,8 @@ li.content:hover .dropdown-content {
 a.dropdown {
     color: black;
 }
+
+.none {
+    padding: 25px;
+}
+
