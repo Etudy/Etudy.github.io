@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <SCRIPT language=JavaScript> 
- 
-        function password() { 
-         
-        var testV = 1; 
-         
-        var pass1 = prompt('请输入密码:',''); 
-         
-        while (testV < 3) { 
-         
-        if (!pass1) 
-         
-        history.go(-1); 
-         
-        if (pass1 == "34kk") { 
-         
-        alert('密码正确!'); 
-
-        window.location.href="童军网课记录.html"
-         
-        break; 
-         
-        } 
-         
-        testV+=-1; 
-         
-        var pass1 = prompt('密码错误!请重新输入:'); 
-         
-        } 
-         
-        if (pass1!="password" & testV ==3) 
-         
-        history.go(-1); 
-         
-        return " "; 
-         
-        } 
-         
-        document.write(password()); 
-         
-        </SCRIPT>
-    <title>童军</title>
-    
+    <title>童军团</title>
+    <script src="j/童军pws.js"></script>
     <link rel="stylesheet" href="css/童军.css">
 </head>
-<body>
 
-    <h2 class="other">童军</h2>
-    <li class="study"><a href="童军网课记录.html" class="">童军网课记录</a></li>
+<body>
+    <h1 class="title">童军团</h1>
+    <br>
+    <h2 class="title">LOG BOOK</h2>
+    <div class="content">
+        <li class="study"><a href="https://drive.google.com/file/d/1iShJIR7UTPrcHO8VB5cizYf9B7YME9-k/view?usp=sharing"
+                class="">USAHA</a></li>
+        <li class="study"><a href="https://drive.google.com/file/d/1wIchrLYnoXPPQTnnIRGiLEYVXriMBGrc/view?usp=sharing"
+                class="">MAJU</a></li>
+        <li class="study"><a href="https://drive.google.com/file/d/1FqKCIj3z8fyni2_XzeN4VznqiLE0Hf-I/view?usp=sharing"
+                class="">JAYA</a></li>
+    </div>
+    <div class="content">
+        <li class="title"><a href="javascript:void(0)" class="title">Persetiaan Pengakap</a>
+            <div class="a" style="text-align: center;">
+                <p>
+                    Bahawa dengan sesungguhnya,<br>
+                    saya berjanji dan bersetia,<br>
+                    yang saya,<br>
+                    dengan seberapa daya upaya saya,<br>
+                    akan: <br>
+                    Taat kepada Tuhan, Raja dan Negara,<br>
+                    Menolong orang pada setiap masa,<br>
+                    Menurut Undang-undang Pengakap.</p>
+            </div>
+        </li>
+
+        <li class="title"><a href="javascript:void(0)" class="title">Lagu Pengakap Malaysia</a>
+            <div class="a" style="text-align: center;">
+                <p>
+                    Kami Pengakap Malaysia <br>
+                    Harapan nusa dan bangsa <br>
+                    Berikrar setia <br>
+                    Pada pertiwi tercinta <br> <br>
+                    Melatih generasi muda <br>
+                    Menjadi insan yang berguna <br>
+                    Persetiaan pengakap <br>
+                    Teras dipegang bersama <br> <br>
+                    Menolong orang setia masa <br>
+                    Menabur bakti di mana sahaja <br>
+                    Demi Tuhan, Raja dan negara <br> <br>
+                    Berbudi, bersaudara <br>
+                    Taat, menurut perintah <br>
+                    Kami bangga junjung cita-cita <br>
+                    Pengakap Malaysia <br> <br>
+                    Kami bangga junjung cita-cita <br>
+                    Pengakap,Pengakap Malaysia
+                </p>
+            </div>
+        </li>
+
+        <li class="title"><a href="kawad kaki.html" class="title">KAWAD KAKI</a>
+            <div class="a" >
+                <p>
+                    
+                </p>
+            </div>
+        </li>
+    </div>
+
+
+    <footer> <small>&copy; Copyright <span id="copyright"></span> étudy. All Rights Reserved.</small> </footer>
+
+    <script>
+        var d = new Date();
+        document.getElementById("copyright").innerHTML = d.getFullYear() </script>
 </body>
+
 </html>
