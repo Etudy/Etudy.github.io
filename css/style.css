@@ -19,7 +19,7 @@ img.img {
   height: 100%; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   margin-top: 50px;
   top: 0;
   right: 0;
@@ -53,6 +53,7 @@ img.img {
   top: 0;
   font-size: 36px;
   right: 10%;
+  display: none;
 }
 
 /* Style the button that is used to open the sidepanel */
@@ -73,8 +74,8 @@ img.img {
   font-size: 22px;
 }
 
-@media screen and (min-width: 1px) {
-  .sidepanel .closebtn {
+@media screen and (max-width: 475px) {
+  .header {
     display: none;
   }
 }
@@ -140,12 +141,20 @@ header:hover {
 }
 
 div.content {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: 7%;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 10%;
+  bottom: 0;
 }
+
+@media (min-width:600px){
+  div.content {grid-template-columns:repeat(2,1fr);}
+}
+@media (min-width:900px){
+  div.content {grid-template-columns:repeat(3,1fr);}
+  }
 
 a {
   text-decoration: none
@@ -170,3 +179,4 @@ footer {
   background: rgb(90, 88, 230);
   color: rgb(255, 255, 255);
 }
+

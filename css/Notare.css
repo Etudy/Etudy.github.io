@@ -1,21 +1,3 @@
-div.class {
-    height: 0; 
-    width: 225px; 
-    position: fixed; 
-    z-index: 1;
-    top: 50px;
-    left: 0;
-    background-color: rgb(50, 50, 50); 
-    overflow-x: hidden;  
-    transition: 1s;
-}
-
-@media screen and (min-width: 600px) {
-    div.class {
-        height: 100%;
-    }
-}
-
 ::-webkit-scrollbar {
     width:10px;
 }
@@ -33,8 +15,30 @@ div.class {
     background:rgb(75, 75, 75);
 }
 
+.none {
+    padding: 25px;
+}
+
 li.class {
     list-style-type: none;
+}
+/*  */
+div.class {
+    height: 0; 
+    width: 225px; 
+    position: fixed; 
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    background-color: rgb(50, 50, 50); 
+    overflow-x: hidden;  
+    transition: 1s;
+}
+
+@media screen and (min-width: 600px) {
+    div.class {
+        height: 100%;
+    }
 }
 
 li a {
@@ -55,7 +59,7 @@ li a.clas {
     background-color: #3ce19e;
     color: rgb(255, 255, 255);
 }
-
+/*  */
 div.tex {
     text-align: center;
     font-family: Lucida Handwriting, Cursive ;
@@ -73,16 +77,6 @@ p.introduction {
     text-align: center;
 }
 
-li.content {
-    background :url('https://wrpes1.files.wordpress.com/2021/09/img-20210908-wa0012.jpg');
-    list-style-type: none;
-    margin: 0 auto;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 25px;
-}
 
 a.content {
     color: rgb(0, 0, 0);
@@ -90,10 +84,6 @@ a.content {
 
 a.content:hover:not(.c) {
     background-color: rgb(245, 164, 188);
-}
-
-a.dropdown:hover:not(.c) {
-    background-color: rgb(237 190 204);
 }
 
 div.dropdown-content {
@@ -107,11 +97,13 @@ li.content:hover .dropdown-content {
 
 }
 
-a.dropdown {
-    color: black;
+li.content {
+    background :url('https://wrpes1.files.wordpress.com/2021/09/img-20210908-wa0012.jpg');
+    list-style-type: none;
+    margin: 0 auto;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 25px;
 }
-
-.none {
-    padding: 25px;
-}
-

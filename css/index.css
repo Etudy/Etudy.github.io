@@ -61,14 +61,10 @@ a.study {
   transition: 0.2s;
   font-size: 20px;
   padding: 5%;
+  text-align: center;
 }
 
 a:hover:not(.active).study {
   background-color: #e993ac;
   border: none;
-}
-
-div.content {
-  bottom: 0;
-  margin: 50px 35%;
 }

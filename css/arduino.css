@@ -1,0 +1,182 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  img.img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding-left: 5px;
+  }
+  
+  /* The sidepanel menu */
+  .sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    margin-top: 50px;
+    top: 0;
+    right: 0;
+    background-color: rgb(50, 50, 50); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+    background: rgb(25, 25, 25);
+    font-size: 30px;
+    border: 10px solid rgb(50, 50, 50);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    right: 10%;
+    display: none;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    float: right; 
+    margin-right: 2%;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    border-radius: 100px;
+    font-size: 22px;
+  }
+  
+  @media screen and (max-width: 475px) {
+    .header {
+      display: none;
+    }
+  }
+  
+  div.li {
+    list-style: none;
+    text-align: center;
+  }
+  
+  ul.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 50, 50);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    float: none;
+    overflow: auto;
+    display: non;
+  }
+  
+  li.left {
+    float: left;
+  }
+  
+  li.left a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li.left a:hover:not(.active) {
+    background-color: rgb(100, 100, 100);
+  }
+  
+  header {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    position: fixed;
+    margin-left: 46%;
+    font-family: Lucida Handwriting, Cursive ;
+    z-index: 1;
+    background:linear-gradient(90deg,#72ace9,#5558b6);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+  }
+  
+  header:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  div.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    margin-top: 10%;
+    bottom: 0;
+  }
+  
+  @media (min-width:600px){
+    div.content {grid-template-columns:repeat(2,1fr);}
+  }
+  @media (min-width:900px){
+    div.content {grid-template-columns:repeat(3,1fr);}
+    }
+  
+  a {
+    text-decoration: none
+  }
+  
+  footer {
+    text-align: center;
+    background: rgb(209, 209, 209);
+    padding: 1% 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .content-bg {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+  }
+  
+  ::selection {
+    background: rgb(90, 88, 230);
+    color: rgb(255, 255, 255);
+  }
+  
+  
