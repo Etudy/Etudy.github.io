@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="pic/study-note.png" type="image/png">
+
+</head>
+
+<body>
+
+  <div id="search-container" style="margin-top: 5%;">
+    <div id="search-input-container">
+      <img src="https://assets.codepen.io/1468070/Google+G+Icon.png" alt="" />
+      <input type="text" placeholder="Type to search..." id="search" />
+    </div>
+
+    <button id="search-button" onclick="googleSearch();" type="button">
+      😶
+    </button>
+  </div>
+
+  <div id="apps-container">
+    <a href="https://youtube.com">
+      <div class="label">
+        <img src="pic/youtube.png" alt="">
+        <span class="name">YouTube</span>
+      </div>
+    </a>
+
+    <a href="https://instagram.com">
+      <div class="label">
+        <img src="pic/Instagram-Icon.png" alt="">
+        <span class="name">Instagram</span>
+      </div>
+    </a>
+
+    <a href="https://web.whatsapp.com">
+      <div class="label">
+        <img src="pic/WhatsApp.svg.webp" alt="">
+        <span class="name">WhatsApp</span>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/drive/u/0/my-drive">
+      <div class="label">
+        <img src="pic/Google_Drive_icon_(2020).svg.png" alt="">
+        <span class="name">Google Drive</span>
+      </div>
+    </a>
+
+    <a href="https://etudy.github.io/index.html">
+      <div class="label">
+        <img src="pic/icon.png" alt="" >
+        <span class="name">étudy
+        </span>
+      </div>
+    </a>
+
+    <a href="https://github.com/">
+      <div class="label">
+        <img src="pic/Octicons-mark-github.svg.png" alt="">
+        <span class="name">Github</span>
+      </div>
+    </a>
+
+    <a href="https://chat.openai.com/chat">
+      <div class="label">
+        <img src="pic/ChatGPT_logo.svg.webp" alt="">
+        <span class="name">ChatGPT</span>
+      </div>
+    </a>
+
+    <a href="https://discord.com/channels/942434725597966416/944945872779763772">
+      <div class="label">
+        <img src="pic/3670157.png" alt="">
+        <span class="name">Discord</span>
+      </div>
+    </a>
+
+    <a href="https://www.facebook.com/">
+      <div class="label">
+        <img src="pic/2021_Facebook_icon.svg.png" alt="">
+        <span class="name">Facebook</span>
+      </div>
+    </a>
+
+    <a href="https://translate.google.com.my/?hl=zh-CN&tab=rT">
+      <div class="label">
+        <img src="pic/Google_Translate_logo.svg.png" alt="">
+        <span class="name">Translate</span>
+      </div>
+    </a>
+
+    <a href="http://www.yinghuacd.com/ribendongman/">
+      <div class="label">
+        <img src="pic/picwish.png" alt="">
+        <span class="name">樱花动漫</span>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1f2jQDRMuZVFHGf9OE8vU_2SMX_O6MY9u">
+      <div class="label">
+        <img src="pic/Google_Drive_icon_(2020).svg.png" alt="">
+        <span class="name">毕业刊资料</span>
+      </div>
+    </a>
+
+    <script>
+      var focus = document.getElementById("search");
+      focus.onkeypress = function (event) {
+        if (event.which === 13) {
+          //点击回车要执行的事件
+          googleSearch()
+        }
+      }
+
+      function googleSearch() {
+        var text = document.getElementById("search").value;
+        var cleanQuery = text.replace(" ", "+", text);
+        var url = 'http://www.google.com/search?q=' + cleanQuery;
+
+        window.location.href = url;
+      }
+    </script>
+</body>
+
+</html>
